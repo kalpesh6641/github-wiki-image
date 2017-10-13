@@ -1,7 +1,7 @@
 def slave = "aws-agents"
 stage: "Print Hello"
 node(slave) {
-  
+  checkout scm
   sh """
     mkdir img
     cd img
