@@ -15,7 +15,7 @@ node(slave) {
       git status
       git add .
       git commit -m "add test file"
-      git push origin HEAD
+      git push ${authenticatedGitRepo} HEAD
     """
   }
   echo "hello"
